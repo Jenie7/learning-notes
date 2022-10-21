@@ -14,9 +14,9 @@ iceCreamOrder
   .then((anotherValue) => {
     console.log(anotherValue);
   })
-  .catch((rejectionValue) => {
+  .catch((rejectValue) => {
     console.log(iceCreamOrder);
-    console.log(rejectionValue);
+    console.error(rejectValue);
   });
 
 console.log(iceCreamOrder);
