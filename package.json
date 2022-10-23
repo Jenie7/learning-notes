@@ -1,0 +1,30 @@
+{
+  "name": "learning-notes",
+  "version": "1.0.0",
+  "description": "A place to keep notes as I learn about programming",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jenie7/learning-notes.git"
+  },
+  "keywords": [
+    "learning"
+  ],
+  "author": "Jenie7",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Jenie7/learning-notes/issues"
+  },
+  "homepage": "https://github.com/Jenie7/learning-notes#readme",
+  "devDependencies": {
+    "eslint": "^8.26.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "prettier": "^2.7.1"
+  }
+}

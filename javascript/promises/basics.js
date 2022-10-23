@@ -10,7 +10,7 @@ order
   .then((resolveValue) => {
     // Promise { <fulfilled> }
     console.log(resolveValue);
-    return new Promise((resolve, reject) => {
+    return new Promise((resolve /* , reject */) => {
       setTimeout(resolve, 3000, '\n\nHey wait!!\nYou forgot your phone!');
       // setTimeout(reject, 300, 'I would be the `rejectValue`.');
     });
