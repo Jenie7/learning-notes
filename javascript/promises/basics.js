@@ -1,17 +1,19 @@
-const iceCreamOrder = new Promise((resolve, reject) => {
-  setTimeout(() => resolve('Here is your ice cream!'), 1500);
-  // setTimeout(() => reject("I'm sorry, we are out of ice cream!"), 2000);
+const order = new Promise((resolve, reject) => {
+  // setTimeout(() => resolve('Here is your ice cream!'), 1500);
+  setTimeout(resolve, 1500, 'Here is your ice cream!');
+
+  // Promise would not be rejected if it gets resolved first!
+  setTimeout(reject, 2000, "I'm sorry, we are out of ice cream!");
 });
 
-iceCreamOrder
+order
   .then((resolveValue) => {
     // Promise { <fulfilled> }
     console.log(resolveValue);
-    return new Promise((resolve) =>
-      setTimeout(() => {
-        resolve('\n\nHey wait!!\nYou forgot your phone!');
-      }, 3000)
-    );
+    return new Promise((resolve, reject) => {
+      setTimeout(resolve, 3000, '\n\nHey wait!!\nYou forgot your phone!');
+      // setTimeout(reject, 300, 'I would be the `rejectValue`.');
+    });
   })
   .then((anotherValue) => {
     console.log(anotherValue);
@@ -25,6 +27,6 @@ iceCreamOrder
 console.log('Waiting..');
 console.log('Using your phone..');
 
-iceCreamOrder
+order
   .then(() => console.log('Thank you for visiting us!'))
   .catch(() => console.error(':('));
