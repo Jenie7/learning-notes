@@ -15,40 +15,52 @@ function randomNumber(minimum, maximum) {
     `\n# Random number between ${minimum} (inclusive) and ${maximum} (exclusive)`
   );
 
-  console.log('\n------------------------\n');
+  console.log('\n------------------------');
+  console.log('');
+
   console.log(`const range = ${maximum} - ${minimum}`);
   const range = maximum - minimum;
   console.log('=>', range);
 
-  console.log('\n------------------------\n');
+  console.log('\n------------------------');
+  console.log('');
 
   console.log(
-    `// Random number greater than or equal to 0 and less than ${range}\n`
+    `// Random number greater than or equal to 0 and less than ${range}`
   );
+  console.log('');
   console.log(`Math.random() * ${range};`);
   const random = Math.random() * range;
   console.log('=>', random);
 
-  console.log('\n------------------------\n');
+  console.log('\n------------------------');
+  console.log('');
 
-  console.log('// To integer\n');
+  console.log('// To integer');
+  console.log('');
   console.log(`Math.floor(${random});`);
   const randomInteger = Math.floor(random);
   console.log('=>', randomInteger);
-  console.log('\n------------------------\n');
 
-  console.log(`// Finally add the minimum\n`);
+  console.log('\n------------------------');
+  console.log('');
+
+  console.log(`// Finally add the minimum`);
+  console.log('');
   console.log(`${randomInteger} + ${minimum}`);
   console.log('=>', randomInteger + minimum);
 
-  console.log('\n------------------------ Extra\n');
+  console.log('\n------------------------ Extra');
+  console.log('');
 
   console.log('// The final code in one line');
+  console.log('');
   console.log(`Math.floor(Math.random() * ${range}) + ${minimum}`);
   console.log('=>', Math.floor(Math.random() * (maximum - minimum)) + minimum);
 
   if (range < 9) {
-    console.log('\n------------------------\n');
+    console.log('\n------------------------');
+    console.log('');
     const possibilities = [];
     for (let index = 0; index < 1000000; index += 1) {
       const newRandom = Math.floor(Math.random() * range);
@@ -57,7 +69,8 @@ function randomNumber(minimum, maximum) {
       }
     }
 
-    console.log('// Possibilities in 1000000 runs for the range from zero\n');
+    console.log('// Possibilities in 1000000 runs for the range from zero');
+    console.log('');
     console.log(`Math.floor(Math.random() * ${range})`);
     console.log(
       '=>',
@@ -66,7 +79,8 @@ function randomNumber(minimum, maximum) {
   }
 
   if (range < 9) {
-    console.log('\n------------------------\n');
+    console.log('\n------------------------');
+    console.log('');
     const possibilities = [];
     for (let index = 0; index < 1000000; index += 1) {
       const newRandom = Math.floor(Math.random() * range) + minimum;
@@ -75,7 +89,8 @@ function randomNumber(minimum, maximum) {
       }
     }
 
-    console.log('// Possibilities in 1000000 runs for the final code\n');
+    console.log('// Possibilities in 1000000 runs for the final code');
+    console.log('');
     console.log(`Math.floor(Math.random() * ${range}) + ${minimum}`);
     console.log(
       '=>',
