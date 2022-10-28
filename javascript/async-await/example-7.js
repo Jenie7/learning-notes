@@ -22,10 +22,9 @@ const startApp = async () => {
   let candies;
   try {
     candies = await goGetCandies();
-    console.log({ candies });
+    console.log(candies);
   } catch (err) {
     console.error(err);
-    console.log(candies);
   }
 
   if (!candies) {
