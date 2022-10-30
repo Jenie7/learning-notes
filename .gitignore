@@ -1,4 +1,5 @@
 .vscode/
 node_modules/
 package-lock.json
-tests/
+projects/instagram/config.js
+projects/instagram/users-media/
