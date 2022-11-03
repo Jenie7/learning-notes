@@ -1,0 +1,36 @@
+.flex-container {
+  display: flex;
+  /* justify-content: space-between; */
+  gap: 5%;
+}
+
+/* this selector selects all divs inside of .flex-container */
+.flex-container div {
+  background: peachpuff;
+  border: 4px solid brown;
+  height: 100px;
+  width: 250px;
+  flex: 1 1 auto;
+  /* flex: 0 1 auto; */
+  /* margin: 5px; */
+}
+
+.flex-container .two {
+  flex-shrink: 0;
+}
+
+/*
+# Notes
+
+- flex-grow     defaults to 1 when omitted. (initial is 0)
+- flex-shrink   defaults to 1 when omitted. (initial is 1)
+- flex-basis    defaults to 0 when omitted. (initial is auto)
+- flex: initial >> "flex: 0 1 auto"
+- flex : auto   >> "flex: 1 1 auto"
+- flex: none    >> "flex: 0 0 auto"
+- By default flex items don't shrink below their minimum content
+  size. To change this, set the item's min-width or min-height.
+
+https://developer.mozilla.org/en-US/docs/Web/CSS/flex
+
+*/
