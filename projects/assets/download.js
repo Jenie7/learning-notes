@@ -20,7 +20,7 @@ module.exports = async function download(mediaURL, output, delay = 5000) {
 
   return new Promise((resolve, reject) => {
     writer.on('finish', () => {
-      setTimeout(resolve, delay);
+      setTimeout(resolve, delay, { status: 'ok' });
     });
     writer.on('error', reject);
   });
