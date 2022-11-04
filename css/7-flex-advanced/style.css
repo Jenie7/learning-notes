@@ -5,30 +5,30 @@ body {
 }
 
 .parent {
-  margin: 3vh auto;
+  position: absolute;
+  inset: 0;
+  margin: 3% auto;
   border: 1px solid red;
+  padding: 2%;
   display: flex;
-  padding: 2vh;
   gap: 10px;
-  width: 50%;
-  flex-wrap: wrap;
+  width: 70%;
+  height: 70%;
+
+  /* flex-direction: column; */
 }
 
 .child {
   border: 1px solid rgb(85, 255, 0);
   padding: 20px;
   color: white;
-  /* flex-grow: 1; */
-  /* width: 100%; */
+  flex: 1;
 }
 
 .child-three {
   border: 1px solid rgb(0, 255, 251);
 
-  /* flex-grow: 1; */
-
+  flex-grow: 3;
   /* flex-shrink: 0; */
-
-  flex-basis: 100%;
-  /* width: 100%; */
+  flex-basis: 300px;
 }
