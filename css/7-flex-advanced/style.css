@@ -15,7 +15,7 @@ body {
   width: 70%;
   height: 70%;
 
-  /* flex-direction: column; */
+  flex-direction: column;
 }
 
 .child {
