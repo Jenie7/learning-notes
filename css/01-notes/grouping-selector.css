@@ -1,0 +1,37 @@
+.read,
+.unread {
+  color: white;
+  background-color: black;
+}
+
+.read {
+  font-family: 'Times New Roman', sans-serif;
+}
+
+/* font-weight affects the boldness of text, assuming the font supports it. This value can be a keyword, e.g. font-weight: bold, or a number between 1 and 1000, e.g. font-weight: 700 (the equivalent of bold). */
+
+/* text-align will align text horizontally within an element. */
+
+.unread {
+  font-weight: bold;
+  text-align: center;
+}
+
+/*
+
+# What gets applied first
+
+- Inline styles have the highest specificity
+- Selectors
+  - ID selectors (most specific selector)
+  - Class selectors
+  - Type selectors
+  - A larger amount of a single selector will beat a smaller amount, e.g. ".main .list" beats ".subsection".
+- Universal selector (*) which has no specificity value
+- Inheritance if possible
+- Whichever rule was the last defined is the winner
+
+
+Specificity will only be taken into account when an element has multiple, conflicting declarations targeting it. 
+
+*/

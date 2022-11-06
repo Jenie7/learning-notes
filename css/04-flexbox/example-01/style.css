@@ -1,0 +1,22 @@
+.flex-container {
+  display: flex;
+}
+
+/* this selector selects all divs inside of .flex-container */
+.flex-container div {
+  background: peachpuff;
+  border: 4px solid brown;
+  height: 100px;
+
+  flex: 1;
+
+  /* Which equates to */
+
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 0;
+}
+
+.flex-container .two {
+  flex: 2 1 0%;
+}
