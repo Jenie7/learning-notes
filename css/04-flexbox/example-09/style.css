@@ -1,0 +1,58 @@
+body {
+  background-color: rgb(19, 19, 19);
+  color: white;
+  font-size: 30px;
+}
+
+.container {
+  /* height: 500px; */
+  /* if width not set, it will default to parent's full width */
+  width: 500px;
+  margin: 50px auto;
+  padding: 20px;
+  border: 4px solid tomato;
+
+  display: flex;
+  gap: 10px;
+  /* flex-wrap: wrap; */
+  /* flex-direction: column; */
+  /* flex-direction: row-reverse; */
+}
+
+.item {
+  border: 4px solid deepskyblue;
+}
+
+.three {
+  height: 550px;
+  width: 300px;
+  flex-shrink: 0;
+}
+
+/*
+
+By default when only display: flex;
+flex: initial >> "flex: 0 1 auto"
+
+- Items display in a row
+- Items start from the start edge of the main axis
+- Items do not stretch on the main dimension, but can shrink.
+- Items will stretch to fill the size of the cross axis.
+- The flex-basis property is set to auto.
+- The flex-wrap property is set to nowrap.
+
+The result of this is that your items will all line up in a row,
+using the size of the content as their size in the main axis.
+If there are more items than can fit in the container, they will not
+wrap but will instead overflow. If some items are taller than others,
+all items will stretch along the cross axis to fill its full size.
+
+For flex-wrap,
+consider each line as a new flex container
+
+You can combine the two properties flex-direction and flex-wrap
+into the flex-flow 
+
+https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox#the_two_axes_of_flexbox
+
+*/

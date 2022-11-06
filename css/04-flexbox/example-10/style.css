@@ -1,0 +1,43 @@
+body {
+  background-color: rgb(19, 19, 19);
+  color: white;
+  font-size: 30px;
+}
+
+.container {
+  box-sizing: border-box;
+  width: 500px;
+  margin: 50px auto;
+  background-color: rgb(0, 79, 105);
+  display: flex;
+}
+
+.item {
+  box-sizing: border-box;
+  border: 1px solid tomato;
+  font-weight: bold;
+  line-height: 98px;
+  text-align: center;
+  width: 100px;
+  flex-grow: 1;
+}
+
+.two {
+  flex-grow: 2;
+}
+
+/*
+
+|           500px           |
+|150x100 | 200x100 | 150x100|
+|                           |
+
+Free space = 200
+200/4 = 50
+
+#1 and #3 each take one share
+#2 takes two shares
+
+https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox#the_two_axes_of_flexbox
+
+*/

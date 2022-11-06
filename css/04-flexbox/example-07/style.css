@@ -1,12 +1,63 @@
-.flex-container {
-  display: flex;
-  /* flex-direction: column; */
+body {
+  background-color: rgb(19, 19, 19);
+  color: white;
 }
 
-/* this selector selects all divs inside of .flex-container */
-.flex-container div {
-  background: peachpuff;
-  border: 4px solid brown;
-  height: 80px;
-  flex: 1 1 auto;
+.flex-container {
+  border: 1px solid deepskyblue;
+  padding: 15px;
+  margin: 30px;
+
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+  /* height: 30vh; */
 }
+
+.flex-container div {
+  border: 2px solid red;
+  /* text-align: center; */
+  height: 150px;
+  width: 150px;
+
+  flex-grow: 1;
+  /* flex-grow: 0; */
+  flex-shrink: 1;
+  flex-basis: 0;
+
+  /* flex: 1 1 auto; */
+  /* flex-basis: 20px; */
+}
+
+/*
+
+flex-grow, flex-shrink and flex-basis are defined for the main axis
+So for the first case when flex-direction is row, setting flex-basis
+to 0 doesn't affect the height because height is defined for cross axis.
+But in the second case when flex-direction is column, setting flex-basis to 0
+affects the height because height is defined for main axis.
+
+You should check this by swapping height with width
+Then you would see consistent results
+
+In another word,
+
+#1  If flex-basis is 0 and flex-direction is row, 
+the width of items will not be respected.
+
+#2 If flex-basis is 0 and flex-direction is column,
+the height of items will not be respected.
+
+What confused me and make it more clear to you and everyone else,
+is that I thought #1 is not true seeing how the items get stretched
+in horizontally.
+
+Thanks to himself#4845 for the explanation
+/channels/1027242721246720080/1027243055205580880/1038689204424671242
+
+# More notes
+- Flex container is block-level element
+- block-level elements default to the full width of their parent
+- block-level elements default to the height of their content
+
+*/

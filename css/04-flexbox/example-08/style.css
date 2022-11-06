@@ -1,0 +1,28 @@
+body {
+  background-color: rgb(19, 19, 19);
+  color: white;
+}
+
+.container {
+  height: 500px;
+  padding: 20px;
+  border: 4px solid tomato;
+
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  /* flex-direction: column; */
+}
+
+.item {
+  width: 100px;
+  height: 100px;
+  border: 4px solid deepskyblue;
+
+  /* flex: 1; */
+}
+
+/* .two {
+  align-self: flex-end;
+} */

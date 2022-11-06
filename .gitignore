@@ -3,4 +3,5 @@ empty/
 node_modules/
 package-lock.json
 projects/instagram/config.js
+javascript/test.js
 projects/instagram/users-media/
