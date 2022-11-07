@@ -1,0 +1,43 @@
+html {
+  background-color: #202020;
+}
+
+body {
+  background-color: rgb(10 10 10);
+  color: #d0d0d0;
+  font-size: 25px;
+  margin: 15px;
+}
+
+.container {
+  box-sizing: border-box;
+  /* height: calc(100vh - 30px); */
+  box-sizing: border-box;
+  padding: 20px;
+  border: 5px solid #a7a7a7;
+
+  display: flex;
+  gap: 10px;
+  /* justify-content: flex-end; */
+  /* align-items: center; */
+  /* flex-direction: column; */
+}
+
+.item {
+  box-sizing: border-box;
+  border: 4px solid #005293;
+  width: 80px;
+  font-weight: bold;
+  line-height: 42px;
+  text-align: center;
+
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+}
+
+.four {
+  margin-left: auto;
+}
+
+/* https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Aligning_Items_in_a_Flex_Container#aligning_content_on_the_cross_axis_%E2%80%94_the_align-content_property */

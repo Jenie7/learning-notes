@@ -17,6 +17,7 @@ body {
   /* flex-wrap: wrap; */
   /* flex-direction: column; */
   /* flex-direction: row-reverse; */
+  /* align-items: baseline */
 }
 
 .item {
@@ -37,7 +38,8 @@ flex: initial >> "flex: 0 1 auto"
 - Items display in a row
 - Items start from the start edge of the main axis
 - Items do not stretch on the main dimension, but can shrink.
-- Items will stretch to fill the size of the cross axis.
+- Items will stretch to fill the size of the cross axis,
+  because of the initial value of align-items, which is stretch
 - The flex-basis property is set to auto.
 - The flex-wrap property is set to nowrap.
 
