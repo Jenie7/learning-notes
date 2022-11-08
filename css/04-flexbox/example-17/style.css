@@ -1,0 +1,33 @@
+html {
+  background-color: #202020;
+}
+
+body {
+  background-color: rgb(10 10 10);
+  color: #d0d0d0;
+  font-size: 20px;
+  margin: 15px;
+}
+
+.wrapper {
+  padding: 20px;
+
+  display: flex;
+  gap: 10px;
+}
+
+.wrapper label {
+  text-align: center;
+  line-height: 30px;
+  flex-grow: 1;
+}
+
+.wrapper input[type='text'] {
+  box-sizing: border-box;
+  height: 30px;
+  flex-grow: 10;
+}
+
+.wrapper input[type='submit'] {
+  flex-grow: 2;
+}

@@ -1,0 +1,41 @@
+html {
+  background-color: #202020;
+}
+
+body {
+  background-color: rgb(10 10 10);
+  color: #d0d0d0;
+  font-size: 25px;
+  margin: 15px;
+}
+
+nav > ul {
+  padding: 0px;
+  display: flex;
+  margin: 0 -10px 0 -10px;
+}
+
+ul > li {
+  border: 4px solid #005293;
+  list-style: none;
+  width: 130px;
+  font-weight: bold;
+  line-height: 42px;
+  text-align: center;
+  margin: 0 10px;
+}
+
+ul > li > a {
+  color: #d0d0d0;
+}
+
+.four {
+  margin-left: auto;
+}
+
+/* 
+
+This is a work around for when there is np gap support
+
+
+*/
