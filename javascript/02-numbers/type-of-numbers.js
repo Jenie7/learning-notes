@@ -14,8 +14,8 @@
 
 */
 
-const myInt = 5;
-const myFloat = 6.667;
+const myInt = 5; // A number without decimals
+const myFloat = 6.667; // A number with decimals
 
 console.log(typeof myInt);
 console.log(typeof myFloat);
@@ -31,5 +31,23 @@ We even have different types of number systems! Decimal is base 10
 
 - Hexadecimal — Base 16, uses 0–9 and then a–f in each column.You may
   have encountered these numbers before when setting colors in CSS.
+
+*/
+
+/*
+
+JavaScript Numbers are Always 64-bit Floating Point
+
+Unlike many other programming languages, JavaScript does not define
+different types of numbers, like integers, short, long, floating-point etc.
+
+JavaScript numbers are always stored as double precision floating point
+numbers, following the international IEEE 754 standard.
+
+This format stores numbers in 64 bits, where the number (the fraction)
+is stored in bits 0 to 51, the exponent in bits 52 to 62, and the sign
+in bit 63.
+
+https://www.w3schools.com/js/js_numbers.asp
 
 */

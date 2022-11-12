@@ -7,6 +7,8 @@ An operand is the part of an instruction representing the data
 manipulated by the operator. For example, when you add two numbers,
 the numbers are the operand and "+" is the operator.
 
+And what to be performed between the two operands is the operation.
+
 */
 
 // Example of some operators

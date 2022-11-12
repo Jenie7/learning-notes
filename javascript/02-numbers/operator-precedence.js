@@ -16,6 +16,9 @@ the same as is taught in math classes in school — multiply and divide
 are always done first, then add and subtract (the calculation is always
 evaluated from left to right).
 
+When using parentheses, the operations inside the parentheses are
+computed first.
+
 In depth,
 https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Operator_Precedence
 
