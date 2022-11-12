@@ -1,0 +1,92 @@
+.wrapper {
+  /* box-sizing: border-box; */
+  border: 5px solid rgb(86, 1, 131);
+  padding: 10px;
+
+  display: flex;
+  flex-wrap: wrap;
+  /* align-items: center; */
+  /* justify-content: center; */
+}
+
+.wrapper > * {
+  box-sizing: border-box;
+  padding: 10px;
+
+  /* flex: 1 1 100%; */
+  /* flex-grow: 1; */
+  /* flex-shrink: 1; */
+  flex-basis: 100%;
+  /* flex: 1; */
+}
+
+.aside {
+  flex-grow: 1;
+  /* flex-shrink: 5; */
+  /* flex-basis: auto; */
+  flex-basis: 0;
+  /* flex-basis: 50%; */
+
+  /* flex: 1 1 0; */
+  /* flex: 1 1 100%; */
+  /* flex: 0 0 0; */
+  /* flex: 0 0 auto; */
+  /* flex: 1 1 100%; */
+}
+
+.main {
+  flex-grow: 3;
+  flex-basis: 0;
+  /* flex-basis: auto; */
+
+  /* flex-grow: 3; */
+  /* flex: 3 0px; */
+}
+
+/* 
+
+.header {
+  order: 1;
+}
+.aside-1 {
+  order: 1;
+}
+.main {
+  order: 2;
+}
+.aside-2 {
+  order: 3;
+}
+.footer {
+  order: 4;
+} */
+
+body {
+  background-color: rgb(19, 19, 19);
+  padding: 2em;
+  font-weight: bold;
+  text-align: center;
+}
+
+.header {
+  background: tomato;
+}
+
+.footer {
+  background: lightgreen;
+}
+
+.main {
+  text-align: left;
+  background: deepskyblue;
+}
+
+.aside-1 {
+  background: gold;
+}
+
+.aside-2 {
+  background: hotpink;
+}
+
+/* Simplified clone of example 6 */

@@ -24,7 +24,7 @@ body {
 }
 
 .main {
-  text-align: left;
+  /* text-align: left; */
   background: deepskyblue;
 }
 
@@ -39,7 +39,7 @@ body {
 @media all and (min-width: 600px) {
   .aside {
     flex: 1 0 0;
-    flex: 0 0 0;
+    /* flex: 0 0 0; */
     /* flex: 0 0 auto; */
     /* flex: 1 1 100%; */
   }
