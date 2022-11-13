@@ -24,7 +24,7 @@ An operator is binary if it has two operands.
 
 */
 
-// Example of some operators
+// Example of some operators are modify-in-place operators
 
 let x = 5;
 

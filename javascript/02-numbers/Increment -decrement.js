@@ -14,3 +14,5 @@ console.log(++number);
 console.log(number++);
 
 console.log(number);
+
+/* Increment/decrement can only be applied to variables. */
