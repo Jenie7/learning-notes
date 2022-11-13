@@ -22,4 +22,6 @@ computed first.
 In depth,
 https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Operator_Precedence
 
+NOTE: Unary pluses applied to values before the binary ones
+
 */
