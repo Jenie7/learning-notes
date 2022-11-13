@@ -68,7 +68,7 @@ async function Main() {
     await downloadStories(filteredStories);
   }
 
-  console.log('\nComplete!');
+  console.log('Complete!');
 }
 
 Main().catch(console.error);
