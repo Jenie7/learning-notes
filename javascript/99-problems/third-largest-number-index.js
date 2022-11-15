@@ -1,6 +1,6 @@
 const originalArray = [91, 2, 33, 51, 54, 39, 34, 61, 34, 91];
 
-/* IMPORTANT: answers did not take into account the duplicates */
+/* IMPORTANT: most answers did not take into account the duplicates */
 
 // ------------------------ [1]
 

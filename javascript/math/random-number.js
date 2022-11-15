@@ -100,6 +100,7 @@ function randomNumber(minimum, maximum) {
   }
 }
 
-randomNumber(-3, 3);
+randomNumber(1, 11);
+// randomNumber(-3, 3);
 // randomNumber(-3, 7);
 // randomNumber(-10, -1);
