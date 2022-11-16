@@ -1,7 +1,7 @@
 function sliceMessage(middleIndexValue, value) {
   const [side, amount] =
     middleIndexValue > value ? ['right', 'larger'] : ['left', 'smaller'];
-  return `Slicing off the ${side} side because ${middleIndexValue}, which is in the middle of the previous list, is ${amount} than our target, that is ${value}`;
+  return `Slicing off the ${side} side because ${middleIndexValue}, which is in the middle of the previous list, is ${amount} than our target, that is ${value}.`;
 }
 
 function binarySearch(list, value) {
@@ -16,11 +16,6 @@ function binarySearch(list, value) {
     loopCounter += 1;
     middleIndex = Math.floor((firstIndex + lastIndex) / 2);
 
-    // console.log({
-    //   firstIndexIndex: firstIndex,
-    //   middleIndexIndex: middleIndex,
-    //   lastIndexIndex: lastIndex,
-    // });
     console.log('Map for the previous list to the original:');
     console.log(`firstIndex  > ${firstIndex}`);
     console.log(`middleIndex > ${middleIndex}`);
@@ -65,6 +60,7 @@ console.log(`list.length > ${list.length}`);
 console.log('');
 
 // const random = Math.floor(Math.random() * 101) + 1;
+// const random = Math.floor(Math.random() * 10) + 1;
 const random = Math.floor(Math.random() * 201);
 console.log(`Attempting to find the index of ${random}..`);
 console.log('');
