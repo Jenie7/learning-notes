@@ -23,3 +23,7 @@ Property access might be a little unpredictable:
 - It is read only. str[0] = "A" gives no error (but does not work!) */
 
 console.log(sentence[4]);
+
+// ------------------------ [4]
+
+console.log('abc'.at);
