@@ -5,6 +5,7 @@ const sentence = 'Hello world!';
 // ------------------------ [1]
 
 console.log(sentence.charAt(4));
+// console.log(sentence.charAt(sentence.length - 1));
 
 // ------------------------ [2]
 
@@ -26,4 +27,12 @@ console.log(sentence[4]);
 
 // ------------------------ [4]
 
-console.log('abc'.at);
+console.log(sentence.at(4));
+// console.log(sentence.at(-1));
+
+// ------------------------ [5]
+
+// eslint-disable-next-line no-restricted-syntax
+for (const char of sentence) {
+  console.info(char);
+}

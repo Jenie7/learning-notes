@@ -1,33 +1,32 @@
 require('../../projects/assets/log-counter');
 
-/* unary + */
+/**
+ * unary +
+ * Is actually does the same thing as Number(...), but is shorter.
+ * Has no effect on numbers.
+ */
 
-// No effect on numbers
 const x = 1;
-console.log(+x); // 1
+console.log(+x);
 
 const y = -2;
-console.log(+y); // -2
+console.log(+y);
 
-// Converts non-numbers
+console.info('------------------------');
+
 console.log(+true);
 console.log(+false);
 console.log(+'');
+console.log(Number(undefined));
+console.log(Number(null));
 
 const apples = '2';
 const oranges = '3';
 
 // both values converted to numbers before the binary plus
-console.log(+apples + +oranges); // 5
+console.log(+apples + +oranges);
 
-/* It actually does the same thing as Number(...), but is shorter. */
-
-// ------------------------
-
-/* 
-
-unary -
-
-A unary operator that reverses the sign 
-
-*/
+/**
+ * Another operator is unary -
+ * A unary operator that reverses the sign.
+ */
