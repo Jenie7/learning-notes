@@ -1,20 +1,20 @@
 /* eslint-disable no-constant-condition */
 require('../../projects/assets/log-counter');
 
-let position = 0;
 const text = 'To be, or not to be, that is the question.';
 
 const target = 'e';
-let count = 0;
-position = text.indexOf(target);
-// console.log(position);
+let startIndex = 0;
+let foundOne = text.indexOf(target, startIndex);
+const collector = [];
 
-while (position !== -1) {
-  count += 1;
-  position = text.indexOf(target, position + 1);
+while (foundOne !== -1) {
+  collector.push(foundOne);
+  startIndex = foundOne + 1;
+  foundOne = text.indexOf(target, startIndex);
 }
 
-console.log(count);
+console.log(collector);
 
 console.log(text.match(/e/g));
 console.log(text.match(/e/g)?.length || 0);
@@ -23,17 +23,6 @@ console.log(text.match(/e/g)?.length || 0);
 console.log(Number(text.match(/x/g)?.length)); */
 console.log(Number(undefined));
 console.log(+null);
-
-/* let match = text.indexOf('e');
-console.log(match);
-const collector = [];
-
-while (match !== -1) {
-  collector.push({ match });
-  match = text.indexOf('e', match + 1);
-}
-
-console.log(collector); */
 
 /* let pos = 0;
 const collector = [];

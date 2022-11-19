@@ -28,3 +28,7 @@ console.log('Z' > 'A');
 console.log('Glow' > 'Glee');
 console.log('Bee' > 'Be');
 console.log('a' > 'A');
+
+/**
+ * @see {@link ./code-point.js}
+ */

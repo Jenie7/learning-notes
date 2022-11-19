@@ -4,6 +4,10 @@ require('../../projects/assets/log-counter');
  * unary +
  * Is actually does the same thing as Number(...), but is shorter.
  * Has no effect on numbers.
+ *
+ * Comparisons (> < >= <=) convert null to a number, treating
+ * it as 0, unlike equality check.
+ * https://javascript.info/comparison
  */
 
 const x = 1;
