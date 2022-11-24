@@ -20,13 +20,18 @@ const kiwi = text.slice(-4);
 console.log(banana);
 // console.log(kiwi);
 
-/* Notes for slice()
-
-- If you omit the second parameter, the method will slice out the
-rest of the string.
-
-- If a parameter is negative, the position is counted from the end
-of the string. */
+/**
+ * Notes for slice()
+ *
+ * If you omit the second parameter, the method will slice out the
+ * rest of the string.
+ * If a parameter is negative, the position is counted from the end
+ * of the string.
+ *
+ * slice() extracts up to but not including indexEnd
+ *
+ * https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/slice
+ */
 
 // ------------------------ [2]
 

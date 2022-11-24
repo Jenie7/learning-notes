@@ -23,6 +23,7 @@ console.log(text.match(/e/g)?.length || 0);
 console.log(Number(text.match(/x/g)?.length)); */
 console.log(Number(undefined));
 console.log(+null);
+console.log(+'');
 
 /* let pos = 0;
 const collector = [];
