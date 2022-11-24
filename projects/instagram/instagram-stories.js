@@ -64,7 +64,7 @@ async function Main() {
   const filteredStories = filterStories(storiesMedia);
 
   if (filteredStories.length) {
-    console.log(`${filteredStories.length} new stories`);
+    console.log(`${filteredStories.length} new stories\n`);
     await downloadStories(filteredStories);
   }
 

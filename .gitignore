@@ -6,3 +6,6 @@ projects/instagram/config.js
 javascript/test.js
 projects/instagram/users-media/
 javascript/98-array/
+projects/simple-note/parts
+projects/simple-note/notes.json
+projects/simple-note/server-notes.json

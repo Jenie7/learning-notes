@@ -2,7 +2,7 @@ const fs = require('fs-extra');
 const axios = require('axios');
 
 module.exports = async function download(mediaURL, output, delay = 5000) {
-  console.log(`\n[Download] ${output}\n`);
+  console.log(`[Download] ${output}`);
   if (await fs.pathExists(output)) {
     console.log('File already exists!');
     return !1;
