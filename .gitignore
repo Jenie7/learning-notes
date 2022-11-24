@@ -5,3 +5,6 @@ package-lock.json
 projects/instagram/config.js
 javascript/test.js
 projects/instagram/users-media/
+projects/simple-note/parts
+projects/simple-note/notes.json
+projects/simple-note/server-notes.json
