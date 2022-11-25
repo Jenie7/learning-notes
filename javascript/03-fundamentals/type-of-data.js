@@ -31,12 +31,14 @@ console.log(null);
 // console.log([]);
 // console.log({});
 
-/*
-There’s no special “function” type in JavaScript. Functions belong to the
-object type. But typeof treats them differently, returning "function".
-That also comes from the early days of JavaScript. Technically, such
-behavior isn’t correct, but can be convenient in practice.
-*/
+/**
+ * There’s no special “function” type in JavaScript. Functions belong
+ * to the object type. But typeof treats them differently, returning
+ * "function".
+ *
+ * That also comes from the early days of JavaScript. Technically,
+ * such behavior isn’t correct, but can be convenient in practice.
+ */
 console.log(console.log);
 
 console.log(Symbol('id'));
