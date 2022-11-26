@@ -1,0 +1,27 @@
+[1] When you inspect a node, the == $0 text next to the node means
+that you can reference this node in the Console with the variable $0.
+
+[2] clear(), clears the console of its history.
+
+[3] $_ returns the value of the most recently evaluated expression.
+
+[4] $(selector) is a shortcut for document.querySelector().
+
+[5] $$(selector) is a shortcut for document.querySelectorAll().
+
+[6] dir(object) displays an object-style listing of all the specified
+object's properties. This method is a shortcut for the Console API's
+console.dir() method.
+
+[7] inspect(object/function) opens and selects the specified element
+or object in the appropriate panel: either the Elements panel for DOM
+elements or the Profiles panel for JavaScript heap objects.
+
+[8] debug(function), When function is called, the debugger is invoked
+and breaks inside the function on the Sources panel allowing to step
+through the code and debug it.
+
+[9] monitor(function), When function is called, a message is logged
+to the console that indicates the function name along with the
+arguments that are passed to the function when it was called.
+

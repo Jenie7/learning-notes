@@ -1,0 +1,2 @@
+[1] HTML represents initial page content, and the DOM represents
+current page content.

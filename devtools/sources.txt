@@ -1,0 +1,8 @@
+Google Chrome Developers
+https://www.youtube.com/user/ChromeDevelopers
+
+What's New in DevTools
+https://www.youtube.com/playlist?list=PLNYkxOF6rcIBDSojZWBv4QJNoT4GNYzQD
+
+GitHub
+https://github.com/orgs/GoogleChrome/repositories

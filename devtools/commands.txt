@@ -1,0 +1,9 @@
+------------------------
+
+>Show Coverage
+>Show Sensors
+
+------------------------CSS
+
+>Set color format..
+>Show rulers on hover

@@ -1,0 +1,6 @@
+[1] Debugging JavaScript - Chrome DevTools 101
+https://www.youtube.com/watch?v=H0XScE08hy8
+https://googlechrome.github.io/devtools-samples/debug-js/get-started
+https://github.com/GoogleChrome/devtools-samples
+https://developer.chrome.com/docs/devtools/javascript/
+
