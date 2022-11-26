@@ -19,7 +19,8 @@ elements or the Profiles panel for JavaScript heap objects.
 
 [8] debug(function), When function is called, the debugger is invoked
 and breaks inside the function on the Sources panel allowing to step
-through the code and debug it.
+through the code and debug it. Can be called from your code.
+https://developer.chrome.com/docs/devtools/javascript/breakpoints/#scope
 
 [9] monitor(function), When function is called, a message is logged
 to the console that indicates the function name along with the

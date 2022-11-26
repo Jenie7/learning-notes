@@ -1,2 +1,6 @@
 [1] HTML represents initial page content, and the DOM represents
 current page content.
+
+[2] Call debugger from your code to pause on that line. This is
+equivalent to a line-of-code breakpoint.
+
