@@ -4,3 +4,6 @@ current page content.
 [2] Call debugger from your code to pause on that line. This is
 equivalent to a line-of-code breakpoint.
 
+[3] Pause your code with breakpoints.
+https://developer.chrome.com/docs/devtools/javascript/breakpoints/
+
