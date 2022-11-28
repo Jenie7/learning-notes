@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 /* eslint-disable no-unused-expressions */
 /* eslint-disable func-names */
 
@@ -19,6 +20,15 @@
  * There exist many well-known function prefixes like
  * create…, show…, get…, check… and so on. Use them to hint what
  * a function does.
+ *
+ * A global Function Declaration is visible in the whole script,
+ * no matter where it is. Also called hoisted function.
+ *
+ * Use function declaration, unless function expression brings
+ * an advantage, like assigning to a variable (let) two different
+ * functions according to a condition, then call that variable.
+ *
+ * Arrow functions can be used in the same way as function expressions.
  */
 
 /**
@@ -28,5 +38,15 @@
  * a function expects to receive another function as a parameter.
  */
 (function () {
-  console.log('hello');
+  console.log('Hello');
 });
+
+/* Function declaration */
+function sayHello() {
+  console.log('Hello');
+}
+
+/* Function expression */
+const sayHi = function () {
+  console.log('Hi');
+};
