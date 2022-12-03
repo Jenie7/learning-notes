@@ -3,7 +3,7 @@ require('../../projects/assets/log-counter');
 /**
  * There are 9 types of values.
  *
- * Primitive Values (7)
+ * Primitive Values (7):
  *  • Undefined (undefined), used for unintentionally missing values.
  *  • Null (null), used for intentionally missing values.
  *  • Booleans (true and false), used for logical operations.
@@ -12,7 +12,7 @@ require('../../projects/assets/log-counter');
  *  • Strings ("hello", "abracadabra", and others), used for text.
  *  • Symbols (uncommon), used to perform rituals and hide secrets.
  *
- * Non-Primitive Values (2)
+ * Non-Primitive Values (2):
  *  • Objects ({} and others), used to group related data and code.
  *  • Functions (x => x * 2 and others), used to refer to code.
  *
@@ -20,6 +20,8 @@ require('../../projects/assets/log-counter');
  * I can manipulate them from my code.
  *
  * All primitive values are immutable (Read-only).
+ *
+ * Variables are not values, variables point to values.
  *
  * https://justjavascript.com/learn/02-the-javascript-universe
  * https://justjavascript.com/learn/03-values-and-variables
