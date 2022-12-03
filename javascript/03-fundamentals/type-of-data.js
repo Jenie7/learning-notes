@@ -19,7 +19,10 @@ require('../../projects/assets/log-counter');
  * Objects and functions are also values but, unlike primitive values,
  * I can manipulate them from my code.
  *
+ * All primitive values are immutable (Read-only).
+ *
  * https://justjavascript.com/learn/02-the-javascript-universe
+ * https://justjavascript.com/learn/03-values-and-variables
  */
 
 console.log(undefined);
