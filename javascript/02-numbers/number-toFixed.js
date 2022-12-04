@@ -1,4 +1,5 @@
 /* eslint-disable no-loss-of-precision */
+require('../../projects/assets/log-counter');
 
 const lotsOfDecimal = 1.766584958675746364;
 console.log(lotsOfDecimal);

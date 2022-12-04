@@ -17,11 +17,19 @@ require('../../projects/assets/log-counter');
  *  • Functions (x => x * 2 and others), used to refer to code.
  *
  * Objects and functions are also values but, unlike primitive values,
- * I can manipulate them from my code.
+ * we can manipulate them from my code.
  *
  * All primitive values are immutable (Read-only).
  *
- * Variables are not values, variables point to values.
+ * Variables (wires) are not values, variables (wires) always point to values.
+ *
+ * Although code like "hi".toUpperCase() makes "hi" seem like an object,
+ * this is nothing but an illusion. JavaScript creates a temporary object
+ * when you do this, and then immediately discards it.
+ *
+ * We mentioned in Mental Models that it is common to think of variables
+ * as boxes. The universe we’re building is not going to have any boxes
+ * at all. It only has wires!
  *
  * https://justjavascript.com/learn/02-the-javascript-universe
  * https://justjavascript.com/learn/03-values-and-variables
