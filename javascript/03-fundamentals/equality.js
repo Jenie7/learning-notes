@@ -14,6 +14,12 @@ require('../../projects/assets/log-counter');
  *
  * There are two rare cases where the behavior of === is different than
  * Object.is, see below.
+ *
+ * Same value equality, or Object.is(a, b), matches the concept of the
+ * sameness of values that we introduced in the previous module.
+ *
+ * Loose Equality is also called abstract equality.
+ * https://dorey.github.io/JavaScript-Equality-Table/
  */
 
 // console.log(Object.is(2, 2));
@@ -28,6 +34,20 @@ console.log(Object.is(-0, 0));
 console.log(0 === -0);
 
 console.info('------------------------');
+
+/**
+ * The one relatively common use case worth knowing for Loose Equality:
+ *
+ * if (x == null) {
+ *   // ...
+ * }
+ *
+ * Which is equivalent to writing:
+ *
+ * if (x === null || x === undefined) {
+ *   // ...
+ * }
+ */
 
 /**
  * An issue will rise here, use one of these methods to avoid it:
