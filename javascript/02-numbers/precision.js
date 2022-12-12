@@ -13,7 +13,14 @@ accurate up to 15 digits.
 const x = 999999999999999; // x will be 999999999999999
 const y = 9999999999999999; // y will be 10000000000000000
 
-/* Floating point arithmetic is not always 100% accurate */
+/**
+ * JavaScript numbers don’t behave exactly the same way as regular
+ * mathematical numbers do.
+ *
+ * To be specific, floating point arithmetic is not always 100% accurate.
+ *
+ * https://floating-point-gui.de/formats/fp/
+ */
 
 const result1 = 0.2 + 0.1;
 console.log(result1);
@@ -22,6 +29,18 @@ console.log(result1);
 
 const result2 = (0.2 * 10 + 0.1 * 10) / 10;
 console.log(result2);
+
+/**
+ * Another way to solve it..
+ *
+ * FYI, the same problem exists for multiplication, for instance 0.09 * 10
+ * returns 0.8999999999999999
+ *
+ * https://stackoverflow.com/questions/588004/is-floating-point-math-broken/51723472#51723472
+ */
+console.log(parseFloat((0.1 + 0.2).toFixed(10)));
+
+console.log(1 / 3 === 0.1 + 0.1 + 0.1);
 
 console.log('------------------------');
 

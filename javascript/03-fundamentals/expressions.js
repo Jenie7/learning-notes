@@ -7,7 +7,7 @@ require('../../projects/assets/log-counter');
  *
  * JavaScript answers expressions in the only way it knows how—with values.
  *
- * Expressions always result in a single value
+ * Expressions always result in a single value.
  */
 
 /* If we “ask” the expression 2 + 2, JavaScript will “answer” with the value 4 */

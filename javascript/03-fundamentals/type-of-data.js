@@ -3,7 +3,7 @@ require('../../projects/assets/log-counter');
 /**
  * There are 9 types of values.
  *
- * Primitive Values (7)
+ * Primitive Values (7):
  *  • Undefined (undefined), used for unintentionally missing values.
  *  • Null (null), used for intentionally missing values.
  *  • Booleans (true and false), used for logical operations.
@@ -12,17 +12,44 @@ require('../../projects/assets/log-counter');
  *  • Strings ("hello", "abracadabra", and others), used for text.
  *  • Symbols (uncommon), used to perform rituals and hide secrets.
  *
- * Non-Primitive Values (2)
+ * Non-Primitive Values (2):
  *  • Objects ({} and others), used to group related data and code.
  *  • Functions (x => x * 2 and others), used to refer to code.
  *
  * Objects and functions are also values but, unlike primitive values,
- * I can manipulate them from my code.
+ * we can manipulate them from my code.
  *
  * All primitive values are immutable (Read-only).
  *
+ * Variables (wires) are not values, variables (wires) always point to values.
+ *
+ * After a variable is declared, it always points to a value. And if you don’t
+ * specify where it should point, it will point to undefined.
+ *
+ * Although code like "hi".toUpperCase() makes "hi" seem like an object,
+ * this is nothing but an illusion. JavaScript creates a temporary object
+ * when you do this, and then immediately discards it.
+ *
+ * We mentioned in Mental Models that it is common to think of variables
+ * as boxes. The universe we’re building is not going to have any boxes
+ * at all. It only has wires!
+ *
+ * In our mental model, all of the primitive values we’ve discussed—null,
+ * undefined, booleans, numbers, and strings—have “always existed.”
+ * We can’t create a new string or a new number, we can only “summon” that value.
+ * Unlike objects and functions which do not exist and need to be created.
+ *
+ * We can create objects—but we cannot destroy them.
+ *
+ * Technically, functions are objects in JavaScript. We’ll keep treating them
+ * as a separate fundamental type because they have unique capabilities
+ * compared to regular objects. But, generally speaking, if you can do
+ * something to an object, you can also do that to a function too.
+ * They are very special objects.
+ *
  * https://justjavascript.com/learn/02-the-javascript-universe
  * https://justjavascript.com/learn/03-values-and-variables
+ * https://justjavascript.com/learn/06-meeting-objects-and-functions
  */
 
 console.log(undefined);
