@@ -67,6 +67,16 @@ const obj = {};
 obj.__proto__.smell = 'banana';
 console.log(animals.__proto__);
 
+const spider = {
+  legs: 8,
+};
+
+const miles = {
+  __proto__: spider,
+};
+
+miles.legs = 2;
+
 /* const o = {};
 let bValue = 38;
 Object.defineProperty(o, 'b', {
