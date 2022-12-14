@@ -12,7 +12,6 @@
  */
 
 const callStackMap = new Map();
-// callStackMap.set('x', 1);
 let counter = 0;
 
 const mine = {
@@ -28,6 +27,10 @@ const mine = {
   },
 };
 
+/**
+ * Tip!
+ * Run in Chrome with debug(countGold) and notice the call stack.
+ */
 function countGold(branch) {
   counter += 1;
   callStackMap.set(branch, counter);
@@ -67,6 +70,3 @@ console.log('');
 console.log(`Total gold: ${gold}`);
 
 // console.log(callStackMap);
-// console.log([...callStackMap.entries()]);
-// console.log([...callStackMap.keys()]);
-// console.log([...callStackMap.values()]);
