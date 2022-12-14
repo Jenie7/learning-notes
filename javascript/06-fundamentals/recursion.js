@@ -25,18 +25,19 @@ function recursionCounter(number) {
   counter += 1;
   callStackMap[number] = counter;
 
-  console.info(number, `// stack #${callStackMap[number]}`);
+  console.info(number, `// Stack #${callStackMap[number]}`);
+
   // Base case
   if (number === 1) {
     console.info(`return ${number}`, `// stack #${callStackMap[number]}`);
     return number;
   }
 
-  // Recursion case
+  // Recursive case
   const nextNumberCall = recursionCounter(number - 1);
   console.info(
     `return ${number + nextNumberCall}`,
-    `// stack #${callStackMap[number]}`
+    `// Stack #${callStackMap[number]}`
   );
 
   return number + nextNumberCall;
