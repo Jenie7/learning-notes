@@ -1,5 +1,7 @@
 /**
- * Nader's great recursion analogy
+ * Tech with Nader
+ * Recursion - Javascript In Depth
+ * Great recursion analogy
  * https://youtu.be/fSh_WXNI5BQ?t=2847
  *
  *
