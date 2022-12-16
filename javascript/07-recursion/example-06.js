@@ -36,8 +36,6 @@ function flatten(obj) {
       collector = { ...collector, ...flatten(value) };
     }
 
-    // FIXME why return
-
     console.log(`collector at stack #${callStackMap.get(obj)} =`, collector);
   }
 

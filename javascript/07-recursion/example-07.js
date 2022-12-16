@@ -106,18 +106,46 @@ function constructDOM(obj) {
   }
 
   // Recursive case
+  // let innerHTML = '';
+  // for (let index = 0; index < obj.childNodes.length; index += 1) {
+  //   const element = obj.childNodes[index];
+  //   innerHTML += constructDOM(element);
+  // }
+
+  // Recursive case
   let innerHTML = '';
-  for (let index = 0; index < obj.childNodes.length; index += 1) {
-    const element = obj.childNodes[index];
-    innerHTML += constructDOM(element);
-  }
 
   if (obj.nodeName) {
-    return `<${obj.nodeName}>${innerHTML}</${obj.nodeName}>`;
+    innerHTML = `<${obj.nodeName}>`;
   }
+
+  console.log(`Start tag at stack #${callStackMap.get(obj)} = "${innerHTML}"`);
+
+  innerHTML += obj.childNodes.map((node) => constructDOM(node)).join('');
+
+  if (obj.nodeName) {
+    innerHTML += `</${obj.nodeName}>`;
+  }
+
+  console.log(
+    `End tag with innerHTML at stack #${callStackMap.get(obj)} = "${innerHTML}"`
+  );
+  // console.log(`Stack #${callStackMap.get(obj)} return value = "${innerHTML}"`);
+  console.log('');
 
   return innerHTML;
 }
+
+// console.log(
+//   constructDOM({ nodeName: 'script', innerText: "console.log('Hello!');" })
+// );
+
+// console.log(
+//   constructDOM({
+//     nodeName: 'html',
+//     childNodes: [{ nodeName: 'body', innerText: 'Hello world!' }],
+//   })
+// );
 
 // console.log(stringifyObject(simpleDocument));
 console.log(constructDOM(simpleDocument));
