@@ -66,24 +66,20 @@ const document = {
 };
 
 const simpleDocument = {
+  nodeName: 'html',
   childNodes: [
     {
-      nodeName: 'html',
+      nodeName: 'head',
       childNodes: [
         {
-          nodeName: 'head',
-          childNodes: [
-            {
-              nodeName: 'script',
-              innerText: "console.log('Hello!');",
-            },
-          ],
-        },
-        {
-          nodeName: 'body',
-          innerText: 'Hello world!',
+          nodeName: 'script',
+          innerText: "console.log('Hello!');",
         },
       ],
+    },
+    {
+      nodeName: 'body',
+      innerText: 'Hello world!',
     },
   ],
 };
