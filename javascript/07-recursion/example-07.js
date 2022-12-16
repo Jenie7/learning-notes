@@ -1,6 +1,10 @@
 /* eslint-disable no-unused-vars */
 
-const stringifyObject = require('../../projects/assets/stringifyObject');
+/**
+ * Tech with Nader
+ * Exercises: Recursion - Javascript In Depth
+ * https://youtu.be/JeR_oHRtNGY?t=3194
+ */
 
 const document = {
   childNodes: [
@@ -12,7 +16,7 @@ const document = {
           childNodes: [
             {
               nodeName: 'script',
-              innerText: "console.log('hi');",
+              innerText: "console.log('Hello!');",
             },
           ],
         },
@@ -84,12 +88,6 @@ const simpleDocument = {
   ],
 };
 
-/**
- * Tech with Nader
- * Exercises: Recursion - Javascript In Depth
- * https://youtu.be/JeR_oHRtNGY?t=3194
- */
-
 const callStackMap = new Map();
 let counter = 0;
 
@@ -98,7 +96,10 @@ function constructDOM(obj) {
   callStackMap.set(obj, counter);
   console.log('');
   console.log(`New stack #${callStackMap.get(obj)}`);
-  console.log(`obj at stack #${callStackMap.get(obj)} =`, stringifyObject(obj));
+  console.log(
+    `obj at stack #${callStackMap.get(obj)} =`,
+    JSON.stringify(obj, null, '  ')
+  );
 
   // Base case
   if (obj.innerText) {
@@ -106,31 +107,25 @@ function constructDOM(obj) {
   }
 
   // Recursive case
-  // let innerHTML = '';
+
+  let innerHTML = '';
+
+  // Add start tag
+  if (obj.nodeName) innerHTML = `<${obj.nodeName}>`;
+  console.log(`Start tag at stack #${callStackMap.get(obj)} = "${innerHTML}"`);
+
   // for (let index = 0; index < obj.childNodes.length; index += 1) {
   //   const element = obj.childNodes[index];
   //   innerHTML += constructDOM(element);
   // }
-
-  // Recursive case
-  let innerHTML = '';
-
-  if (obj.nodeName) {
-    innerHTML = `<${obj.nodeName}>`;
-  }
-
-  console.log(`Start tag at stack #${callStackMap.get(obj)} = "${innerHTML}"`);
-
   innerHTML += obj.childNodes.map((node) => constructDOM(node)).join('');
 
-  if (obj.nodeName) {
-    innerHTML += `</${obj.nodeName}>`;
-  }
+  // Add end tag
+  if (obj.nodeName) innerHTML += `</${obj.nodeName}>`;
 
   console.log(
     `End tag with innerHTML at stack #${callStackMap.get(obj)} = "${innerHTML}"`
   );
-  // console.log(`Stack #${callStackMap.get(obj)} return value = "${innerHTML}"`);
   console.log('');
 
   return innerHTML;
@@ -147,7 +142,6 @@ function constructDOM(obj) {
 //   })
 // );
 
-// console.log(stringifyObject(simpleDocument));
 console.log(constructDOM(simpleDocument));
 
 /*
@@ -169,7 +163,7 @@ console.log(constructDOM(simpleDocument));
 <html>
   <head>
     <script>
-      console.log('hi');
+      console.log('Hello!');
     </script>
   </head>
   <body>
@@ -184,4 +178,4 @@ console.log(constructDOM(simpleDocument));
     </div>
   </body>
 </html>
- */
+*/
