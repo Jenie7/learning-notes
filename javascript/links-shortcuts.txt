@@ -1,4 +1,3 @@
-Set browser extension to redirect to the following:
+Set a browser extension to redirect:
 
-https://dev.moz/js/
-> https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/
+https://dev.moz/js/ --> https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/
