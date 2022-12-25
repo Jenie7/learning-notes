@@ -38,6 +38,6 @@ const counterGenerator = counter();
 
   for (const count of counterGenerator) {
     console.log(count);
-    await sleep(3000);
+    await sleep(1500);
   }
 })();

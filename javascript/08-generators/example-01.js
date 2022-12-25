@@ -1,8 +1,13 @@
 const sleep = require('../../projects/assets/sleep');
 
 /**
+ * Tech with Nader
+ * Generators - Javascript In Depth
+ * https://youtu.be/0i0jYeZmt5c
+ *
  * The function* declaration (function keyword followed by an asterisk)
  * defines a generator function, which returns a Generator object.
+ * Generator functions do not have arrow function counterparts.
  *
  * https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function*
  */
