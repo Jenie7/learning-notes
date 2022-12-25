@@ -90,6 +90,6 @@ Object.defineProperty(o, 'b', {
 //   configurable: true,
 });
 
-// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/defineProperty
+// https://dev.moz/js/Global_Objects/Object/defineProperty
 
 console.log(o); */

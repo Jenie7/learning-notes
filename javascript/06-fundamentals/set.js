@@ -13,7 +13,7 @@ require('../../projects/assets/log-counter');
  * •
  * •
  *
- * https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/SET
+ * https://dev.moz/js/Global_Objects/SET
  */
 
 const mySet = new Set();

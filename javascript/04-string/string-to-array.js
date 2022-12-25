@@ -10,7 +10,7 @@ console.log(word.split());
  * You must be careful which level of characters you are iterating on.
  * For example, split("") will split by UTF-16 code units and will
  * separate surrogate pairs.
- * https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String#description
+ * https://dev.moz/js/Global_Objects/String#description
  */
 
 console.log('😄'.split(''));

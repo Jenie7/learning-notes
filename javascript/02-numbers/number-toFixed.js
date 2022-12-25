@@ -16,4 +16,4 @@ console.log(lotsOfDecimal.toFixed(3));
 console.log(lotsOfDecimal.toFixed(4));
 console.log(lotsOfDecimal.toFixed(5));
 
-// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/toFixed
+// https://dev.moz/js/Global_Objects/Number/toFixed

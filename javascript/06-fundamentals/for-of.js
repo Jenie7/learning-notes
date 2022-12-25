@@ -7,7 +7,7 @@
  * NodeList (and other DOM collections), as well as the arguments object,
  * generators produced by generator functions, and user-defined iterables.
  *
- * https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for...of
+ * https://dev.moz/js/Statements/for...of
  */
 
 const array = [1, , , , 4, 'x'];

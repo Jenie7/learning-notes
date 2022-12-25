@@ -9,7 +9,7 @@ const sleep = require('../../projects/assets/sleep');
  * defines a generator function, which returns a Generator object.
  * Generator functions do not have arrow function counterparts.
  *
- * https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function*
+ * https://dev.moz/js/Statements/function*
  */
 
 function* counter() {
