@@ -1,3 +1,5 @@
+/* eslint-disable comment-length/limit-single-line-comments */
+
 module.exports = {
   env: {
     commonjs: true,
@@ -8,6 +10,7 @@ module.exports = {
     //
     'airbnb-base',
     'plugin:prettier/recommended',
+    'plugin:comment-length/recommended',
   ],
   overrides: [],
   parserOptions: {
@@ -37,6 +40,20 @@ module.exports = {
         selector: 'WithStatement',
         message:
           '`with` is disallowed in strict mode because it makes code impossible to predict and optimize.',
+      },
+    ],
+    'comment-length/limit-single-line-comments': [
+      'error',
+      {
+        maxLength: 80,
+        ignoreUrls: false,
+      },
+    ],
+    'comment-length/limit-multi-line-comments': [
+      'error',
+      {
+        maxLength: 80,
+        ignoreUrls: false,
       },
     ],
   },

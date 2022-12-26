@@ -5,15 +5,15 @@ require('../../projects/assets/log-counter');
  * order of the keys. Any value (both objects and primitive values) may be
  * used as either a key or a value.
  *
- * • For keys, it follows same-value equality, but +0 and -0 are considered equal
- * • Does not contain any default keys, unlike Objects, which have prototypes
+ * • keys follow same-value equality, but +0 and -0 are considered equal
+ * • Does not contain any default keys such as Object's prototypes
  * • A Map is an iterable, unlike an object
  * • No native support for serialization or parsing
  * • Supports .keys, .values, .entries, and .forEach
  * • Defaults to .entries on loops, see example below
  * • The callback for .forEach has the first param as value and second as key
  * • Use the regular Map constructor to transform a 2D key-value Array into map
- * • Use Array.from() or spread syntax to transform a map into a 2D key-value Array
+ * • Use Array.from() or spread syntax to transform a map into a 2D Array
  * • This a 2D key-value Array [['key1', 'value1'], ['key2', 'value2']]
  *
  * https://dev.moz/js/Global_Objects/Map

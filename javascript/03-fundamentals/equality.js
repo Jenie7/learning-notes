@@ -51,12 +51,12 @@ console.info('------------------------');
 
 /**
  * An issue will rise here, use one of these methods to avoid it:
- *  • Number.isNaN(size) <--- and not the global .isNaN() *commentLinkBelow
+ *  • Number.isNaN(size) <--- NOT the global .isNaN()
  *  • Object.is(size, NaN)
  *  • size !== size
  *
  * https://justjavascript.com/learn/07-equality-of-values
- * https://gist.github.com/gaearon/08a85a33e3d08f3f2ca25fb17bd9d638?permalink_comment_id=4162747#gistcomment-4162747
+ * https://gist.github.com/gaearon/08a85a33e3d08f3f2ca25fb17bd9d638
  */
 function resizeImage(size) {
   if (size === NaN) {
