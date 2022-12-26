@@ -20,7 +20,7 @@ function* randomAmountFromRange(amount, min, max) {
 
 const generatorObj = randomAmountFromRange(10, 3, 5);
 // const generatorObj = randomAmountFromRange(3, 10, 20);
-// const generatorObj = randomAmountFromRange(5, 100, 200);
+// const generatorObj = randomAmountFromRange(5, 100, 200); 
 
 for (const number of generatorObj) {
   console.log(number);
