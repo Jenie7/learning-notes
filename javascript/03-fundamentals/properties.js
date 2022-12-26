@@ -1,5 +1,3 @@
-/* eslint-disable */
-
 /**
  * In our JavaScript universe, both variables and properties act
  * like “wires.”However, the wires of properties start from objects
@@ -17,8 +15,8 @@
  *     a. If it exists, answer with the value this property points to.
  *     b. If it doesn’t exist, answer with the undefined value.
  *
- * Object does not have property boat, when accessing it, you will get undefined,
- * this does not mean that our object has a boat property pointing to undefined.
+ * Object does not have property x, when accessing it, you will get undefined
+ * this does not mean that our object has an x property pointing to undefined.
  * But because the rules say that if a property doesn't exist, the value of the
  * property expression is the undefined value.
  *
