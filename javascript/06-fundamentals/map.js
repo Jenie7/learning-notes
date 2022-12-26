@@ -16,7 +16,7 @@ require('../../projects/assets/log-counter');
  * • Use Array.from() or spread syntax to transform a map into a 2D key-value Array
  * • This a 2D key-value Array [['key1', 'value1'], ['key2', 'value2']]
  *
- * https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map
+ * https://dev.moz/js/Global_Objects/Map
  */
 
 const myMap = new Map();

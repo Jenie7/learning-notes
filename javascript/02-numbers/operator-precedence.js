@@ -20,7 +20,7 @@ When using parentheses, the operations inside the parentheses are
 computed first.
 
 In depth,
-https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Operator_Precedence
+https://dev.moz/js/Operators/Operator_Precedence
 
 NOTE: Unary operators are applied to values before the binary ones
 

@@ -58,6 +58,13 @@ async function Main() {
   const url = `https://www.instagram.com/api/v1/feed/reels_media/?reel_ids=${user.id}`;
 
   const storiesData = await request({ url, headers });
+  // console.log(storiesData);
+
+  if (!storiesData.reels_media.length) {
+    console.log('No stories!');
+    return;
+  }
+
   const storiesItems = storiesData.reels_media[0].items;
 
   const storiesMedia = storiesItems.map((node) => extractMedia(node));

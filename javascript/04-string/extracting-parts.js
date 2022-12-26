@@ -30,7 +30,7 @@ console.log(banana);
  *
  * slice() extracts up to but not including indexEnd
  *
- * https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/slice
+ * https://dev.moz/js/Global_Objects/String/slice
  */
 
 // ------------------------ [2]
